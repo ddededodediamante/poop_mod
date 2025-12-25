@@ -1,0 +1,6 @@
+{
+  "sound_event": "ddepoopmod:caketown",
+  "description": { "translate": "item.ddepoopmod.caketown_music_disc.desc" },
+  "length_in_seconds": 168,
+  "comparator_output": 0
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "ddepoopmod:poop_block",
+    "ddepoopmod:poop_stairs",
+    "ddepoopmod:poop_slab",
+    "ddepoopmod:poop_wall",
+    "ddepoopmod:poop_fence",
+    "ddepoopmod:poop_fence_gate",
+    "ddepoopmod:poop_door",
+    "ddepoopmod:poop_button",
+    "ddepoopmod:poop_pressure_plate"
+  ]
+}

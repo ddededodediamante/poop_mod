@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ddepoopmod",
+  "version": "${version}",
+  "name": "dde: Poop Mod",
+  "description": "This is a ddededodediamante description!",
+  "authors": ["ddededodediamante"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-ddededodediamante-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/ddepoopmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.ddededodediamante.ddepoopmodMod"],
+    "client": ["com.ddededodediamante.ddepoopmodModClient"],
+    "fabric-datagen": [
+      "com.ddededodediamante.datagen.ddepoopmodModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "ddepoopmod.mixins.json",
+    {
+      "config": "ddepoopmod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

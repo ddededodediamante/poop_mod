@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.ddededodediamante.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["ddepoopmodClientMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
