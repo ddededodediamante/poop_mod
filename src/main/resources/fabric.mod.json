@@ -3,11 +3,11 @@
   "id": "ddepoopmod",
   "version": "${version}",
   "name": "dde: Poop Mod",
-  "description": "This is a ddededodediamante description!",
+  "description": "A mod that adds poop related blocks, items and others.",
   "authors": ["ddededodediamante"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-ddededodediamante-mod"
+    "homepage": "https://github.com/ddededodediamante/",
+    "sources": "https://github.com/ddededodediamante/poop_mod/"
   },
   "license": "CC0-1.0",
   "icon": "assets/ddepoopmod/icon.png",

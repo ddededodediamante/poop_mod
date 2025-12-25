@@ -1,5 +1,5 @@
 # dde: Poop Mod
 
-Adds Poop blocks, items and many more things.
+A mod that adds poop related blocks, items and others.
 
 download it on Modrinth (soon)

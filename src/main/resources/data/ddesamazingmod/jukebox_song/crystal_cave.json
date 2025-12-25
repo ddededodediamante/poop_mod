@@ -1,8 +1,0 @@
-{
-  "sound_event": "ddepoopmod:crystal_cave",
-  "description": {
-    "translate": "item.ddepoopmod.crystal_cave_music_disc.desc"
-  },
-  "length_in_seconds": 49,
-  "comparator_output": 0
-}

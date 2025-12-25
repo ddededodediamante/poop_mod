@@ -29,27 +29,11 @@ public class ddepoopmodModelProvider extends FabricModelProvider {
                 .build();
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POOP_BLOCK).family(POOP_FAMILY);
-
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COOL_BLOCK)
-                .stairs(ModBlocks.COOL_STAIRS)
-                .slab(ModBlocks.COOL_SLAB);
-
-        blockStateModelGenerator.registerSimpleState(ModBlocks.DIE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.SUSPICIOUS_SUBSTANCE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CORD_LAT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SKIBIDI_PENGUINMOD_SONG_MUSIC_DISC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CRYSTAL_CAVE_MUSIC_DISC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CAKETOWN_MUSIC_DISC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DAY_WAND, Models.HANDHELD_ROD);
-        itemModelGenerator.register(ModItems.NIGHT_WAND, Models.HANDHELD_ROD);
         itemModelGenerator.register(ModItems.POOP_PIECE, Models.GENERATED);
-        itemModelGenerator.register(ModBlocks.SUSPICIOUS_CAKE.asItem(), Models.GENERATED);
-        itemModelGenerator.register(ModItems.ANTI_COOKED_BEEF, Models.GENERATED);
-        itemModelGenerator.register(ModItems.EVIL_STICK, Models.HANDHELD_ROD);
     }
 
     @Override

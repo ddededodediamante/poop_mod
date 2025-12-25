@@ -3,14 +3,10 @@ package com.ddededodediamante;
 import java.lang.reflect.Field;
 import java.util.function.Function;
 
-import com.ddededodediamante.block.custom.DieBlock;
-import com.ddededodediamante.block.custom.SuspiciousCake;
-
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.WoodType;
@@ -32,22 +28,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block COOL_BLOCK = register(
-            "cool_block",
-            Block::new,
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(2.0f),
-            true);
-    public static final Block COOL_STAIRS = register(
-            "cool_stairs",
-            settings -> new StairsBlock(COOL_BLOCK.getDefaultState(), settings),
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(2.0f),
-            true);
-    public static final Block COOL_SLAB = register(
-            "cool_slab",
-            SlabBlock::new,
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(2.0f),
-            true);
-
     public static final Block POOP_BLOCK = register(
             "poop_block",
             Block::new,
@@ -105,23 +85,8 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WET_GRASS),
             true);
 
-    public static final Block DIE = register(
-            "die",
-            settings -> new DieBlock(settings),
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.IRON).strength(3.0f),
-            true);
-
-    public static final Block SUSPICIOUS_CAKE = register(
-            "suspicious_cake",
-            SuspiciousCake::new,
-            Block.Settings.copy(Blocks.CAKE).sounds(BlockSoundGroup.LARGE_AMETHYST_BUD),
-            new Item.Settings().maxCount(1));
-
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
-            itemGroup.add(ModBlocks.COOL_BLOCK.asItem());
-            itemGroup.add(ModBlocks.COOL_STAIRS.asItem());
-            itemGroup.add(ModBlocks.COOL_SLAB.asItem());
             itemGroup.add(ModBlocks.POOP_BLOCK.asItem());
             itemGroup.add(ModBlocks.POOP_STAIRS.asItem());
             itemGroup.add(ModBlocks.POOP_SLAB.asItem());
@@ -131,14 +96,6 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.POOP_DOOR.asItem());
             itemGroup.add(ModBlocks.POOP_BUTTON.asItem());
             itemGroup.add(ModBlocks.POOP_PRESSURE_PLATE.asItem());
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(itemGroup -> {
-            itemGroup.add(ModBlocks.DIE.asItem());
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(itemGroup -> {
-            itemGroup.add(ModBlocks.SUSPICIOUS_CAKE.asItem());
         });
 
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.DDES_ITEM_GROUP_KEY).register((itemGroup) -> {

@@ -1,12 +1,10 @@
 package com.ddededodediamante.datagen;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import com.ddededodediamante.ModBlocks;
 import com.ddededodediamante.ModItems;
 
-import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Items;
@@ -99,97 +97,6 @@ public class ddepoopmodRecipeProvider extends FabricRecipeProvider {
                         .criterion("has_poop_block",
                                 conditionsFromItem(ModBlocks.POOP_BLOCK.asItem()))
                         .offerTo(exporter);
-
-                /* cool blocks */
-
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOL_BLOCK.asItem(), 2)
-                        .pattern("s")
-                        .pattern("t")
-                        .pattern("b")
-                        .input('s', ModItems.SUSPICIOUS_SUBSTANCE)
-                        .input('t', Items.COBBLESTONE)
-                        .input('b', Items.BLUE_DYE)
-                        .criterion("has_suspicious_substance",
-                                conditionsFromItem(ModItems.SUSPICIOUS_SUBSTANCE))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOL_STAIRS.asItem(), 4)
-                        .pattern("c  ")
-                        .pattern("cc ")
-                        .pattern("ccc")
-                        .input('c', ModBlocks.COOL_BLOCK.asItem())
-                        .criterion("has_cool_block",
-                                conditionsFromItem(ModBlocks.COOL_BLOCK.asItem()))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOL_SLAB.asItem(), 6)
-                        .pattern("ccc")
-                        .input('c', ModBlocks.COOL_BLOCK.asItem())
-                        .criterion("has_cool_block",
-                                conditionsFromItem(ModBlocks.COOL_BLOCK.asItem()))
-                        .offerTo(exporter);
-
-                /* others */
-
-                createShaped(RecipeCategory.FOOD, ModBlocks.SUSPICIOUS_CAKE.asItem(), 1)
-                        .pattern("mmm")
-                        .pattern("sgs")
-                        .pattern("www")
-                        .input('m', Items.MILK_BUCKET)
-                        .input('s', ModItems.SUSPICIOUS_SUBSTANCE)
-                        .input('g', Items.EGG)
-                        .input('w', Items.WHEAT)
-                        .criterion("has_milk", conditionsFromItem(Items.MILK_BUCKET))
-                        .criterion("has_suspicious",
-                                conditionsFromItem(ModItems.SUSPICIOUS_SUBSTANCE))
-                        .criterion("has_egg", conditionsFromItem(Items.EGG))
-                        .criterion("has_wheat", conditionsFromItem(Items.WHEAT))
-                        .offerTo(exporter);
-
-                createShapeless(RecipeCategory.FOOD, ModItems.ANTI_COOKED_BEEF, 1)
-                        .input(Items.COOKED_BEEF)
-                        .input(ModItems.SUSPICIOUS_SUBSTANCE)
-                        .criterion("has_cooked_beef", conditionsFromItem(Items.COOKED_BEEF))
-                        .criterion("has_suspicious",
-                                conditionsFromItem(ModItems.SUSPICIOUS_SUBSTANCE))
-                        .offerTo(exporter);
-
-                createShaped(RecipeCategory.TOOLS, ModItems.DAY_WAND, 1)
-                        .pattern("sds")
-                        .pattern("gmg")
-                        .pattern(" m ")
-                        .input('s', ModItems.SUSPICIOUS_SUBSTANCE)
-                        .input('d', Blocks.DAYLIGHT_DETECTOR.asItem())
-                        .input('g', Items.GOLD_INGOT)
-                        .input('m', Items.STICK)
-                        .criterion("has_suspicious",
-                                conditionsFromItem(ModItems.SUSPICIOUS_SUBSTANCE))
-                        .criterion("has_daylight_detector",
-                                conditionsFromItem(Blocks.DAYLIGHT_DETECTOR.asItem()))
-                        .offerTo(exporter);
-
-                createShaped(RecipeCategory.TOOLS, ModItems.NIGHT_WAND, 1)
-                        .pattern("sds")
-                        .pattern("imi")
-                        .pattern(" m ")
-                        .input('s', ModItems.SUSPICIOUS_SUBSTANCE)
-                        .input('d', Blocks.DAYLIGHT_DETECTOR.asItem())
-                        .input('i', Items.IRON_INGOT)
-                        .input('m', Items.STICK)
-                        .criterion("has_suspicious",
-                                conditionsFromItem(ModItems.SUSPICIOUS_SUBSTANCE))
-                        .criterion("has_daylight_detector",
-                                conditionsFromItem(Blocks.DAYLIGHT_DETECTOR.asItem()))
-                        .offerTo(exporter);
-
-                /* smelting */
-
-                offerSmelting(
-                        List.of(Items.AMETHYST_SHARD, Items.AMETHYST_BLOCK,
-                                Items.AMETHYST_CLUSTER),
-                        RecipeCategory.MISC,
-                        ModItems.SUSPICIOUS_SUBSTANCE,
-                        0.1f,
-                        150,
-                        "amethyst_to_suspicious_substance");
             }
         };
     }
