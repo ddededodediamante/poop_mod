@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "p": "ddepoopmod:poop_block"
+  },
+  "pattern": [
+    "pp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ddepoopmod:poop_pressure_plate"
+  }
+}

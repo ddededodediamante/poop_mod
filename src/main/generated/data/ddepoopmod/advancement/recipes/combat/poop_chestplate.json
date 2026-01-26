@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_poop_piece": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ddepoopmod:poop_piece"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ddepoopmod:poop_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_poop_piece"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ddepoopmod:poop_chestplate"
+    ]
+  }
+}

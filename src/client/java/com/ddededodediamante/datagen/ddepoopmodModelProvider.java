@@ -34,6 +34,10 @@ public class ddepoopmodModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.POOP_PIECE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POOP_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POOP_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POOP_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POOP_BOOTS, Models.GENERATED);
     }
 
     @Override

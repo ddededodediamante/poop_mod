@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "ddepoopmod:block/poop_door_bottom",
+    "top": "ddepoopmod:block/poop_door_top"
+  }
+}

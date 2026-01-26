@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "p": "ddepoopmod:poop_piece"
+  },
+  "pattern": [
+    "ppp",
+    "p p",
+    "p p"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ddepoopmod:poop_leggings"
+  }
+}

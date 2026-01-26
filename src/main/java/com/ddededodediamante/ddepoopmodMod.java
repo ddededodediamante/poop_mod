@@ -12,10 +12,13 @@ public class ddepoopmodMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Hello dde's Amazing world!");
+        LOGGER.info("Hello from dde: Poop Mod!");
 
-        ModItemGroups.register();
+        ModSounds.initialize();
+        ModItemGroups.initialize();
         ModItems.initialize();
         ModBlocks.initialize();
+        ModEffects.initialize();
+        ModPotions.initialize();
     }
 }

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ddepoopmod:poop"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ddepoopmod:poop"
+      }
+    ]
+  }
+}

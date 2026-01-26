@@ -1,0 +1,10 @@
+// 1.21.10	-999999999-01-01T00:00:00	dde: Poop Mod/Block Loot Tables
+fa3c95f49fa7537205e0daf5baf529c8062c815b data/ddepoopmod/loot_table/blocks/poop_block.json
+42f390340ae8fa705f85a8ab78b002eb6d63c630 data/ddepoopmod/loot_table/blocks/poop_button.json
+1fcd768ccee3ec5c26ef9e14a8de031d52868d7b data/ddepoopmod/loot_table/blocks/poop_door.json
+dea46ff319bb38c958c7dcc2cc454b22b008624e data/ddepoopmod/loot_table/blocks/poop_fence.json
+6fb896aead8ab21b74fd7add02d6d991f311cbe5 data/ddepoopmod/loot_table/blocks/poop_fence_gate.json
+4ed0308e418908b4f60ff5a72c056c993cc825d9 data/ddepoopmod/loot_table/blocks/poop_pressure_plate.json
+d1736987b790ecc0558444ae161e895c883faeb1 data/ddepoopmod/loot_table/blocks/poop_slab.json
+6370ca878987bcc56bef1d84f93f2ab9e903fea8 data/ddepoopmod/loot_table/blocks/poop_stairs.json
+0f66a24701c1ef2b2d6ba557620e4ffd4bb3926d data/ddepoopmod/loot_table/blocks/poop_wall.json

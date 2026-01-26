@@ -19,7 +19,7 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemGroup.ddepoopmod"))
             .build();
 
-    public static void register() {
+    public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, DDES_ITEM_GROUP_KEY, DDES_ITEM_GROUP);
     }
 }

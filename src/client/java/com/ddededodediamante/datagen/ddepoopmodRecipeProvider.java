@@ -11,7 +11,6 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
@@ -27,13 +26,12 @@ public class ddepoopmodRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(registryLookup, exporter) {
             @Override
             public void generate() {
-                /* poop */
-
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_BLOCK.asItem(), 2)
-                        .pattern("dd")
-                        .pattern("dd")
-                        .input('d', ItemTags.DIRT)
-                        .criterion("has_dirt", conditionsFromTag(ItemTags.DIRT))
+                        .pattern("pp")
+                        .pattern("pp")
+                        .input('p', ModItems.POOP_PIECE)
+                        .criterion("has_poop_piece",
+                                conditionsFromItem(ModItems.POOP_PIECE))
                         .offerTo(exporter);
                 createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_STAIRS.asItem(), 4)
                         .pattern("p  ")
@@ -91,11 +89,41 @@ public class ddepoopmodRecipeProvider extends FabricRecipeProvider {
                         .criterion("has_poop_block",
                                 conditionsFromItem(ModBlocks.POOP_BLOCK.asItem()))
                         .offerTo(exporter);
-                createShaped(RecipeCategory.FOOD, ModItems.POOP_PIECE, 2)
+                createShaped(RecipeCategory.FOOD, ModItems.POOP_PIECE, 1)
                         .pattern("p")
-                        .input('p', ModBlocks.POOP_BLOCK.asItem())
-                        .criterion("has_poop_block",
-                                conditionsFromItem(ModBlocks.POOP_BLOCK.asItem()))
+                        .input('p', ItemTags.DIRT)
+                        .criterion("has_dirt",
+                                conditionsFromTag(ItemTags.DIRT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.POOP_HELMET, 1)
+                        .pattern("ppp")
+                        .pattern("p p")
+                        .input('p', ModItems.POOP_PIECE)
+                        .criterion("has_poop_piece",
+                                conditionsFromItem(ModItems.POOP_PIECE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.POOP_CHESTPLATE, 1)
+                        .pattern("p p")
+                        .pattern("ppp")
+                        .pattern("ppp")
+                        .input('p', ModItems.POOP_PIECE)
+                        .criterion("has_poop_piece",
+                                conditionsFromItem(ModItems.POOP_PIECE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.POOP_LEGGINGS, 1)
+                        .pattern("ppp")
+                        .pattern("p p")
+                        .pattern("p p")
+                        .input('p', ModItems.POOP_PIECE)
+                        .criterion("has_poop_piece",
+                                conditionsFromItem(ModItems.POOP_PIECE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.POOP_BOOTS, 1)
+                        .pattern("p p")
+                        .pattern("p p")
+                        .input('p', ModItems.POOP_PIECE)
+                        .criterion("has_poop_piece",
+                                conditionsFromItem(ModItems.POOP_PIECE))
                         .offerTo(exporter);
             }
         };
