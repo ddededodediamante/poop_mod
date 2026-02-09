@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "ddepoopmod:chiseled_poop",
+  "result": {
+    "count": 1,
+    "id": "ddepoopmod:poop_bricks"
+  }
+}

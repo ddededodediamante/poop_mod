@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "smooth_poop",
+  "ingredient": "ddepoopmod:poop_block",
+  "result": {
+    "id": "ddepoopmod:smooth_poop_block"
+  }
+}

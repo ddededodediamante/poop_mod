@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ddepoopmod:block/smooth_poop_slab"
+    },
+    "type=double": {
+      "model": "ddepoopmod:block/smooth_poop_block"
+    },
+    "type=top": {
+      "model": "ddepoopmod:block/smooth_poop_slab_top"
+    }
+  }
+}

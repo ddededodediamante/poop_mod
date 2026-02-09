@@ -17,6 +17,15 @@
   "block.ddepoopmod.poop_button": "Poop Button",
   "block.ddepoopmod.poop_door": "Poop Door",
   "block.ddepoopmod.poop_pressure_plate": "Poop Pressure Plate",
+  "block.ddepoopmod.smooth_poop_block": "Smooth Poop Block",
+  "block.ddepoopmod.smooth_poop_stairs": "Smooth Poop Stairs",
+  "block.ddepoopmod.smooth_poop_slab": "Smooth Poop Slab",
+  "block.ddepoopmod.poop_bricks": "Poop Bricks",
+  "block.ddepoopmod.poop_brick_stairs": "Poop Brick Stairs",
+  "block.ddepoopmod.poop_brick_slab": "Poop Brick Slab",
+  "block.ddepoopmod.poop_brick_wall": "Poop Brick Wall",
+  "block.ddepoopmod.cracked_poop_bricks": "Cracked Poop Bricks",
+  "block.ddepoopmod.chiseled_poop": "Chiseled Poop",
   "sound.ddepoopmod.fart": "Fart",
   "effect.ddepoopmod.fart": "Fart"
 }

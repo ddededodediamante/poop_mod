@@ -25,5 +25,17 @@ public class ddepoopmodBlockLootTableProvider extends FabricBlockLootTableProvid
         addDrop(ModBlocks.POOP_SLAB);
         addDrop(ModBlocks.POOP_STAIRS);
         addDrop(ModBlocks.POOP_WALL);
+
+        addDrop(ModBlocks.SMOOTH_POOP_BLOCK);
+        addDrop(ModBlocks.SMOOTH_POOP_STAIRS);
+        addDrop(ModBlocks.SMOOTH_POOP_SLAB);
+
+        addDrop(ModBlocks.POOP_BRICKS);
+        addDrop(ModBlocks.POOP_BRICK_STAIRS);
+        addDrop(ModBlocks.POOP_BRICK_SLAB);
+        addDrop(ModBlocks.POOP_BRICK_WALL);
+
+        addDrop(ModBlocks.CRACKED_POOP_BRICKS);
+        addDrop(ModBlocks.CHISELED_POOP);
     }
 }

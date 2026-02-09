@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ddepoopmod:block/smooth_poop_block"
+  }
+}

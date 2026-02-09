@@ -28,7 +28,28 @@ public class ddepoopmodModelProvider extends FabricModelProvider {
                 .wall(ModBlocks.POOP_WALL)
                 .build();
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POOP_BLOCK).family(POOP_FAMILY);
+        BlockFamily SMOOTH_POOP_FAMILY = new BlockFamily.Builder(ModBlocks.SMOOTH_POOP_BLOCK)
+                .stairs(ModBlocks.SMOOTH_POOP_STAIRS)
+                .slab(ModBlocks.SMOOTH_POOP_SLAB)
+                .build();
+
+        BlockFamily POOP_BRICK_FAMILY = new BlockFamily.Builder(ModBlocks.POOP_BRICKS)
+                .stairs(ModBlocks.POOP_BRICK_STAIRS)
+                .slab(ModBlocks.POOP_BRICK_SLAB)
+                .wall(ModBlocks.POOP_BRICK_WALL)
+                .build();
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POOP_BLOCK)
+                .family(POOP_FAMILY);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SMOOTH_POOP_BLOCK)
+                .family(SMOOTH_POOP_FAMILY);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POOP_BRICKS)
+                .family(POOP_BRICK_FAMILY);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRACKED_POOP_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_POOP);
     }
 
     @Override

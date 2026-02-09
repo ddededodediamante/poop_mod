@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ddepoopmod:block/poop_bricks",
+    "side": "ddepoopmod:block/poop_bricks",
+    "top": "ddepoopmod:block/poop_bricks"
+  }
+}

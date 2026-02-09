@@ -1,5 +1,6 @@
 package com.ddededodediamante.datagen;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import com.ddededodediamante.ModBlocks;
@@ -125,6 +126,80 @@ public class ddepoopmodRecipeProvider extends FabricRecipeProvider {
                         .criterion("has_poop_piece",
                                 conditionsFromItem(ModItems.POOP_PIECE))
                         .offerTo(exporter);
+
+                offerSmelting(
+                        List.of(ModBlocks.POOP_BLOCK),
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.SMOOTH_POOP_BLOCK,
+                        0.1f,
+                        200,
+                        "smooth_poop");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_POOP_STAIRS, 4)
+                        .pattern("p  ")
+                        .pattern("pp ")
+                        .pattern("ppp")
+                        .input('p', ModBlocks.SMOOTH_POOP_BLOCK)
+                        .criterion("has_smooth_poop",
+                                conditionsFromItem(ModBlocks.SMOOTH_POOP_BLOCK))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_POOP_SLAB, 6)
+                        .pattern("ppp")
+                        .input('p', ModBlocks.SMOOTH_POOP_BLOCK)
+                        .criterion("has_smooth_poop",
+                                conditionsFromItem(ModBlocks.SMOOTH_POOP_BLOCK))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_BRICKS, 4)
+                        .pattern("pp")
+                        .pattern("pp")
+                        .input('p', ModBlocks.SMOOTH_POOP_BLOCK)
+                        .criterion("has_smooth_poop",
+                                conditionsFromItem(ModBlocks.SMOOTH_POOP_BLOCK))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_BRICK_STAIRS, 4)
+                        .pattern("p  ")
+                        .pattern("pp ")
+                        .pattern("ppp")
+                        .input('p', ModBlocks.POOP_BRICKS)
+                        .criterion("has_poop_bricks",
+                                conditionsFromItem(ModBlocks.POOP_BRICKS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_BRICK_SLAB, 6)
+                        .pattern("ppp")
+                        .input('p', ModBlocks.POOP_BRICKS)
+                        .criterion("has_poop_bricks",
+                                conditionsFromItem(ModBlocks.POOP_BRICKS))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_BRICK_WALL, 6)
+                        .pattern("ppp")
+                        .pattern("ppp")
+                        .input('p', ModBlocks.POOP_BRICKS)
+                        .criterion("has_poop_bricks",
+                                conditionsFromItem(ModBlocks.POOP_BRICKS))
+                        .offerTo(exporter);
+                offerSmelting(
+                        List.of(ModBlocks.POOP_BRICKS),
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.CRACKED_POOP_BRICKS,
+                        0.1f,
+                        200,
+                        "cracked_poop_bricks");
+                offerStonecuttingRecipe(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.CHISELED_POOP,
+                        ModBlocks.POOP_BRICKS);
+                offerStonecuttingRecipe(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POOP_BRICK_SLAB,
+                        ModBlocks.POOP_BRICKS);
+                offerStonecuttingRecipe(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POOP_BRICK_STAIRS,
+                        ModBlocks.POOP_BRICKS);
+                offerStonecuttingRecipe(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.POOP_BRICK_WALL,
+                        ModBlocks.POOP_BRICKS);
             }
         };
     }

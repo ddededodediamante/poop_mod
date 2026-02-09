@@ -85,6 +85,55 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WET_GRASS),
             true);
 
+    public static final Block SMOOTH_POOP_BLOCK = register(
+            "smooth_poop_block",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f),
+            true);
+    public static final Block SMOOTH_POOP_STAIRS = register(
+            "smooth_poop_stairs",
+            settings -> new StairsBlock(SMOOTH_POOP_BLOCK.getDefaultState(), settings),
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f),
+            true);
+    public static final Block SMOOTH_POOP_SLAB = register(
+            "smooth_poop_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f),
+            true);
+
+    public static final Block POOP_BRICKS = register(
+            "poop_bricks",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(2.0f),
+            true);
+    public static final Block POOP_BRICK_STAIRS = register(
+            "poop_brick_stairs",
+            settings -> new StairsBlock(POOP_BRICKS.getDefaultState(), settings),
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(2.0f),
+            true);
+    public static final Block POOP_BRICK_SLAB = register(
+            "poop_brick_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(2.0f),
+            true);
+    public static final Block POOP_BRICK_WALL = register(
+            "poop_brick_wall",
+            WallBlock::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(2.0f),
+            true);
+
+    public static final Block CRACKED_POOP_BRICKS = register(
+            "cracked_poop_bricks",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f),
+            true);
+
+    public static final Block CHISELED_POOP = register(
+            "chiseled_poop",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.5f),
+            true);
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.add(ModBlocks.POOP_BLOCK.asItem());
@@ -96,6 +145,15 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.POOP_DOOR.asItem());
             itemGroup.add(ModBlocks.POOP_BUTTON.asItem());
             itemGroup.add(ModBlocks.POOP_PRESSURE_PLATE.asItem());
+            itemGroup.add(ModBlocks.SMOOTH_POOP_BLOCK.asItem());
+            itemGroup.add(ModBlocks.SMOOTH_POOP_STAIRS.asItem());
+            itemGroup.add(ModBlocks.SMOOTH_POOP_SLAB.asItem());
+            itemGroup.add(ModBlocks.POOP_BRICKS.asItem());
+            itemGroup.add(ModBlocks.POOP_BRICK_STAIRS.asItem());
+            itemGroup.add(ModBlocks.POOP_BRICK_SLAB.asItem());
+            itemGroup.add(ModBlocks.POOP_BRICK_WALL.asItem());
+            itemGroup.add(ModBlocks.CRACKED_POOP_BRICKS.asItem());
+            itemGroup.add(ModBlocks.CHISELED_POOP.asItem());
         });
 
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.DDES_ITEM_GROUP_KEY).register((itemGroup) -> {

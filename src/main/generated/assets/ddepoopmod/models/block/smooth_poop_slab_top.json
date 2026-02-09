@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ddepoopmod:block/smooth_poop_block",
+    "side": "ddepoopmod:block/smooth_poop_block",
+    "top": "ddepoopmod:block/smooth_poop_block"
+  }
+}

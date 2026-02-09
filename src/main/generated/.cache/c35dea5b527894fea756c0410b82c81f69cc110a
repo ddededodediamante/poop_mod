@@ -1,5 +1,11 @@
 // 1.21.10	-999999999-01-01T00:00:00	dde: Poop Mod/Block Loot Tables
+5add160eaa33e75213bb56b6070fec5f39d03b00 data/ddepoopmod/loot_table/blocks/chiseled_poop.json
+ce7a9feaedffea59038a7aec8d3a52e3eb043842 data/ddepoopmod/loot_table/blocks/cracked_poop_bricks.json
 fa3c95f49fa7537205e0daf5baf529c8062c815b data/ddepoopmod/loot_table/blocks/poop_block.json
+12d61cd6bf9e411bd1f616787c8e63f69d6136af data/ddepoopmod/loot_table/blocks/poop_brick_slab.json
+1b2dbfe5392326991ad82d3c2fd88af0902e6399 data/ddepoopmod/loot_table/blocks/poop_brick_stairs.json
+cdf20bcf5d6a3d439e7e926780879d4a737e8f05 data/ddepoopmod/loot_table/blocks/poop_brick_wall.json
+8427780a4539ea1e60c5fe164b9200be6a3e278e data/ddepoopmod/loot_table/blocks/poop_bricks.json
 42f390340ae8fa705f85a8ab78b002eb6d63c630 data/ddepoopmod/loot_table/blocks/poop_button.json
 1fcd768ccee3ec5c26ef9e14a8de031d52868d7b data/ddepoopmod/loot_table/blocks/poop_door.json
 dea46ff319bb38c958c7dcc2cc454b22b008624e data/ddepoopmod/loot_table/blocks/poop_fence.json
@@ -8,3 +14,6 @@ dea46ff319bb38c958c7dcc2cc454b22b008624e data/ddepoopmod/loot_table/blocks/poop_
 d1736987b790ecc0558444ae161e895c883faeb1 data/ddepoopmod/loot_table/blocks/poop_slab.json
 6370ca878987bcc56bef1d84f93f2ab9e903fea8 data/ddepoopmod/loot_table/blocks/poop_stairs.json
 0f66a24701c1ef2b2d6ba557620e4ffd4bb3926d data/ddepoopmod/loot_table/blocks/poop_wall.json
+43a203ed8a746aa105d6425252492e33545da35c data/ddepoopmod/loot_table/blocks/smooth_poop_block.json
+2aa186e44205fff8fb8e026152b57b17e834e0f4 data/ddepoopmod/loot_table/blocks/smooth_poop_slab.json
+b6cfd2183175906014ba8283fb48c465f7355370 data/ddepoopmod/loot_table/blocks/smooth_poop_stairs.json
