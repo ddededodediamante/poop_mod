@@ -27,6 +27,33 @@ public class ModPotions {
                             3800,
                             1)));
 
+    public static final Potion STINK = Registry.register(
+            Registries.POTION,
+            Identifier.of(ddepoopmodMod.MOD_ID, "stink"),
+            new Potion("stink",
+                    new StatusEffectInstance(
+                            ModEffects.STINK,
+                            1800,
+                            0)));
+
+    public static final Potion LONG_STINK = Registry.register(
+            Registries.POTION,
+            Identifier.of(ddepoopmodMod.MOD_ID, "long_stink"),
+            new Potion("stink",
+                    new StatusEffectInstance(
+                            ModEffects.STINK,
+                            3600,
+                            0)));
+
+    public static final Potion STRONG_STINK = Registry.register(
+            Registries.POTION,
+            Identifier.of(ddepoopmodMod.MOD_ID, "strong_stink"),
+            new Potion("stink",
+                    new StatusEffectInstance(
+                            ModEffects.STINK,
+                            800,
+                            1)));
+
     public static void initialize() {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(
@@ -38,6 +65,22 @@ public class ModPotions {
                     Registries.POTION.getEntry(FART),
                     ModBlocks.POOP_BLOCK.asItem(),
                     Registries.POTION.getEntry(STRONG_FART));
+
+            // Stink potion brewing
+            builder.registerPotionRecipe(
+                    Potions.WATER,
+                    ModBlocks.POOP_BRICK_SLAB.asItem(),
+                    Registries.POTION.getEntry(STINK));
+
+            builder.registerPotionRecipe(
+                    Registries.POTION.getEntry(STINK),
+                    ModBlocks.POOP_BLOCK.asItem(),
+                    Registries.POTION.getEntry(LONG_STINK));
+
+            builder.registerPotionRecipe(
+                    Registries.POTION.getEntry(STINK),
+                    ModBlocks.POOP_BRICK_SLAB.asItem(),
+                    Registries.POTION.getEntry(STRONG_STINK));
         });
     }
 }

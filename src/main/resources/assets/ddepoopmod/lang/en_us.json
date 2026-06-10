@@ -8,6 +8,15 @@
   "item.minecraft.potion.effect.fart": "Potion of Fart",
   "item.minecraft.splash_potion.effect.fart": "Splash Potion of Fart",
   "item.minecraft.lingering_potion.effect.fart": "Lingering Potion of Fart",
+  "item.minecraft.potion.effect.stink": "Potion of Stink",
+  "item.minecraft.splash_potion.effect.stink": "Splash Potion of Stink",
+  "item.minecraft.lingering_potion.effect.stink": "Lingering Potion of Stink",
+  "item.minecraft.potion.effect.long_stink": "Potion of Stink",
+  "item.minecraft.splash_potion.effect.long_stink": "Splash Potion of Stink",
+  "item.minecraft.lingering_potion.effect.long_stink": "Lingering Potion of Stink",
+  "item.minecraft.potion.effect.strong_stink": "Potion of Stink",
+  "item.minecraft.splash_potion.effect.strong_stink": "Splash Potion of Stink",
+  "item.minecraft.lingering_potion.effect.strong_stink": "Lingering Potion of Stink",
   "block.ddepoopmod.poop_block": "Poop Block",
   "block.ddepoopmod.poop_stairs": "Poop Stairs",
   "block.ddepoopmod.poop_slab": "Poop Slab",
@@ -27,5 +36,6 @@
   "block.ddepoopmod.cracked_poop_bricks": "Cracked Poop Bricks",
   "block.ddepoopmod.chiseled_poop": "Chiseled Poop",
   "sound.ddepoopmod.fart": "Fart",
-  "effect.ddepoopmod.fart": "Fart"
+  "effect.ddepoopmod.fart": "Fart",
+  "effect.ddepoopmod.stink": "Stink Aura"
 }

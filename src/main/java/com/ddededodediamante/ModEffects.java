@@ -19,10 +19,26 @@ public class ModEffects {
         }
     }
 
+    public static class StinkEffect extends StatusEffect {
+        protected StinkEffect() {
+            super(StatusEffectCategory.HARMFUL, 0x4A3728); 
+        }
+
+        @Override
+        public boolean canApplyUpdateEffect(int duration, int amplifier) {
+            return true;
+        }
+    }
+
     public static final RegistryEntry<StatusEffect> FART = Registry.registerReference(
             Registries.STATUS_EFFECT,
             Identifier.of(ddepoopmodMod.MOD_ID, "fart"),
             new FartEffect());
+
+    public static final RegistryEntry<StatusEffect> STINK = Registry.registerReference(
+            Registries.STATUS_EFFECT,
+            Identifier.of(ddepoopmodMod.MOD_ID, "stink"),
+            new StinkEffect());
 
     public static void initialize() {
     }
